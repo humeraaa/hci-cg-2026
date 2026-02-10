@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCI Week 05 – HTML Errors</title>
+</head>
+<body style="background-color:#cce5ff;">
+<header style="background-color:#cce5ff;">
+  <h1>HTML Common Errors & Fixes</h1>
+</header>
+<nav style="background-color:#cce5ff;">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="hci-principles.html">HCI Principles</a></li>
+    <li><a href="interaction-models.html">Interaction Models</a></li>
+    <li><a href="html-errors.html">HTML Errors & Fixes</a></li>
+  </ul>
+</nav>
+<main>
+  <section style="background-color:#cce5ff;">
+    <h2>Table of Contents</h2>
+    <ul>
+      <li><a href="#error1">1. Missing Closing Tags</a></li>
+      <li><a href="#error2">2. Incorrect Nesting</a></li>
+      <li><a href="#error3">3. Missing Alt Attribute in Images</a></li>
+      <li><a href="#error4">4. Invalid Attributes</a></li>
+      <li><a href="#error5">5. Deprecated Tags</a></li>
+      <li><a href="#error6">6. Improper List Nesting</a></li>
+      <li><a href="#error7">7. Incorrect Heading Order</a></li>
+      <li><a href="#error8">8. Broken Links</a></li>
+      <li><a href="#error9">9. Inline Styles Misuse</a></li>
+      <li><a href="#error10">10. Form Errors</a></li>
+    </ul>
+  </section>
+  <section id="error1" style="background-color:#fff9c4;">
+    <h2>1. Missing Closing Tags</h2>
+    <pre>&lt;p&gt;This is a paragraph</pre>
+    <pre>&lt;p&gt;This is a paragraph&lt;/p&gt;</pre>
+  </section>
+  <section id="error2" style="background-color:#fff9c4;">
+    <h2>2. Incorrect Nesting</h2>
+    <pre>&lt;ul&gt;&lt;li&gt;Item 1&lt;p&gt;Text&lt;/li&gt;&lt;/ul&gt;</pre>
+    <pre>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Text&lt;/p&gt;</pre>
+  </section>
+  <section id="error3" style="background-color:#fff9c4;">
+    <h2>3. Missing Alt Attribute in Images</h2>
+    <pre>&lt;img src="image.jpg"&gt;</pre>
+    <pre>&lt;img src="image.jpg" alt="Description of image"&gt;</pre>
+  </section>
+  <section id="error4" style="background-color:#fff9c4;">
+    <h2>4. Invalid Attributes</h2>
+    <pre>&lt;div color="red"&gt;Text&lt;/div&gt;</pre>
+    <pre>&lt;div style="color:red;"&gt;Text&lt;/div&gt;</pre>
+  </section>
+  <section id="error5" style="background-color:#fff9c4;">
+    <h2>5. Deprecated Tags</h2>
+    <pre>&lt;font color="blue"&gt;Text&lt;/font&gt;</pre>
+    <pre>&lt;span style="color:blue;"&gt;Text&lt;/span&gt;</pre>
+  </section>
+  <section id="error6" style="background-color:#fff9c4;">
+    <h2>6. Improper List Nesting</h2>
+    <pre>&lt;ul&gt;&lt;li&gt;Item&lt;ul&gt;&lt;li&gt;Subitem&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</pre>
+    <pre>&lt;ul&gt;&lt;li&gt;Item &lt;ul&gt;&lt;li&gt;Subitem&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</pre>
+  </section>
+  <section id="error7" style="background-color:#fff9c4;">
+    <h2>7. Incorrect Heading Order</h2>
+    <pre>&lt;h3&gt;Title&lt;/h3&gt;&lt;h1&gt;Main Heading&lt;/h1&gt;</pre>
+    <pre>&lt;h1&gt;Main Heading&lt;/h1&gt;&lt;h2&gt;Subheading&lt;/h2&gt;</pre>
+  </section>
+  <section id="error8" style="background-color:#fff9c4;">
+    <h2>8. Broken Links</h2>
+    <pre>&lt;a href="wrong.html"&gt;Link&lt;/a&gt;</pre>
+    <pre>&lt;a href="correct.html"&gt;Link&lt;/a&gt;</pre>
+  </section>
+  <section id="error9" style="background-color:#fff9c4;">
+    <h2>9. Inline Styles Misuse</h2>
+    <pre>&lt;h1 style="font-size:20pt"&gt;Heading&lt;/h1&gt;</pre>
+    <pre>&lt;h1&gt;Heading&lt;/h1&gt;</pre>
+  </section>
+  <section id="error10" style="background-color:#fff9c4;">
+    <h2>10. Form Errors</h2>
+    <pre>&lt;form&gt;&lt;input type="text"&gt;&lt;/form&gt;</pre>
+    <pre>&lt;form action="submit.php"&gt;&lt;input type="text" name="username"&gt;&lt;/form&gt;</pre>
+  </section>
+</main>
+<footer style="background-color:#cce5ff;">
+  <p>&copy; 2026 CS-555 HCI – Week 05 Submission</p>
+  <p><a href="index.html">Back to Home</a></p>
+</footer>
+</body>
+</html>
